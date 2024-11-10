@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Heading.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary d-none d-lg-block">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero text-center" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-8 mx-auto" data-aos="zoom-out">
+                    <img src="Images/hero-img.svg" alt="Rocket and person illustration" class="img-fluid mb-4">
+                    <h1>Welcome to <span class="text-primary">My Site</span></h1>
+                    <p class="lead mb-4">Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates
+                        similique aut.</p>
+                    <div class="d-flex justify-content-center gap-3" data-aos="zoom-out-up">
+                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-outline-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-play-circle me-2" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                            </svg>
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features mt-5">
+            <div class="row">
+                <div class="col-md-3 text-center mb-4" data-aos="zoom-out-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-activity text-primary mb-3" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
+                    </svg>
+                    <h3 class="icon title">Lorem Ipsum</h3>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                </div>
+                <div class="col-md-3 text-center mb-4" data-aos="zoom-out-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-bounding-box text-primary mb-3" viewBox="0 0 16 16">
+                        <path
+                            d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
+                    </svg>
+                    <h3>Sed ut perspici</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+                <div class="col-md-3 text-center mb-4" data-aos="zoom-out-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-calendar3 text-primary mb-3" viewBox="0 0 16 16">
+                        <path
+                            d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                        <path
+                            d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                    </svg>
+                    <h3>Magni Dolores</h3>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                </div>
+                <div class="col-md-3 text-center mb-4" data-aos="zoom-out-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-broadcast text-primary mb-3" viewBox="0 0 16 16">
+                        <path
+                            d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                    </svg>
+                    <h3>Nemo Enim</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Sections -->
+    <div class="section-title" data-aos="zoom-out-down">
+        <h2>About Us</h2>
+        <p class="text-muted">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+
+    <div class="row align-items-center mt-5">
+        <!-- Image Section -->
+        <div class="col-md-6">
+            <div class="image-container" data-aos="zoom-in-right">
+                <img src="Images/about-bg.png" alt="Background Image" class="background-image">
+                <img src="Images/about-portrait.jpg" alt="Main Image" class="main-image">
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="About-Content Section col-md-6"  data-aos="zoom-out-up">
+            <h3>Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
+            <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="saepe-tab" data-bs-toggle="tab" data-bs-target="#saepe"
+                        type="button" role="tab" aria-controls="saepe" aria-selected="true">Saepe fuga</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="voluptates-tab" data-bs-toggle="tab" data-bs-target="#voluptates"
+                        type="button" role="tab" aria-controls="voluptates" aria-selected="false">Voluptates</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="corrupti-tab" data-bs-toggle="tab" data-bs-target="#corrupti"
+                        type="button" role="tab" aria-controls="corrupti" aria-selected="false">Corrupti</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="aboutTabsContent" data-aos="zoom-in-left">
+                <div class="tab-pane fade show active" id="saepe" role="tabpanel" aria-labelledby="saepe-tab">
+                    <p>Consequuntur inventore voluptatem consequatur aut vel et. Eos doloribus expedita.</p>
+                    <ul>
+                        <li><strong>Repudiandae rerum velit modi et officia quasi facilis</strong> - Laborum omnis
+                            voluptatem voluptas sit ut aliquam blanditiis.</li>
+                        <li><strong>Incidunt non veritatis illum ea ut nisi</strong> - Non quod totam minus repellendus
+                            autem sit amet velit.</li>
+                        <li><strong>Omnis ab quia nemo dignissimos rem eum quos</strong> - Eius alias aut cupiditate.
+                            Dolor voluptates animi ut blanditiis quos nam.</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="voluptates" role="tabpanel" aria-labelledby="voluptates-tab">
+                    <!-- Content for Voluptates tab -->
+                    <p>Content for Voluptates tab goes here.</p>
+                    <ul>
+                        <li><strong>Repudiandae rerum velit modi et officia quasi facilis</strong> - Laborum omnis
+                            voluptatem voluptas sit ut aliquam blanditiis.</li>
+                        <li><strong>Incidunt non veritatis illum ea ut nisi</strong> - Non quod totam minus repellendus
+                            autem sit amet velit.</li>
+                        <li><strong>Omnis ab quia nemo dignissimos rem eum quos</strong> - Eius alias aut cupiditate.
+                            Dolor voluptates animi ut blanditiis quos nam.</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="corrupti" role="tabpanel" aria-labelledby="corrupti-tab">
+                    <!-- Content for Corrupti tab -->
+                    <p>Content for Corrupti tab goes here.</p>
+                    <ul>
+                        <li><strong>Repudiandae rerum velit modi et officia quasi facilis</strong> - Laborum omnis
+                            voluptatem voluptas sit ut aliquam blanditiis.</li>
+                        <li><strong>Incidunt non veritatis illum ea ut nisi</strong> - Non quod totam minus repellendus
+                            autem sit amet velit.</li>
+                        <li><strong>Omnis ab quia nemo dignissimos rem eum quos</strong> - Eius alias aut cupiditate.
+                            Dolor voluptates animi ut blanditiis quos nam.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logos Section -->
+    <div class="row text-center mt-5">
+        <div class="col" data-aos="zoom-in-up">
+            <img src="Images/clients/client-1.png" alt="Logo 1" class="img-fluid logo">
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+            <img src="Images/clients/client-2.png" alt="Logo 2" class="img-fluid logo">
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+            <img src="Images/clients/client-3.png" alt="Logo 3" class="img-fluid logo">
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+            <img src="Images/clients/client-4.png" alt="Logo 4" class="img-fluid logo">
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+            <img src="Images/clients/client-5.png" alt="Logo 5" class="img-fluid logo">
+        </div>
+        <div class="col" data-aos="zoom-in-up">
+            <img src="Images/clients/client-6.png" alt="Logo 5" class="img-fluid logo">
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!----Call-Section---->
+
+    <section class="call-section">
+        <div class="container">
+            <div class="row align-items-center" data-aos="fade-down-right">
+                <div class="col-lg-6">
+                    <h1 class="call-title">
+                        Alias sunt quas <u>Cupiditate</u> oluptas hic minima
+                    </h1>
+                    <p class="call-text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                    <button class="cta-button">
+                        Call To Action
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-container" data-aos="fade-down-left">
+                        <div class="image-frame">
+                            <img src="Images/cta.jpg" alt="Professional at work" class="call-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----Video-Section---->
+
+    <section class="video-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in">
+                    <div class="video-image" data-aos="zoom-in-right">
+                        <img src="Images/onfocus-video-bg.jpg" alt="Team collaboration" class="Team collaboration img">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-content" data-aos="zoom-in-left">
+                        <h1>Voluptatem dignissimos provident quasi corporis</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <div class="check-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                            </svg>
+                            <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                        </div>
+                        <div class="check-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                            </svg>
+                            <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                        </div>
+                        <div class="check-item mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                            </svg>
+                            <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---Feature-Section--->
+
+    <section class="feature-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 mb-4" data-aos="zoom-out-up" data-aos-duration="1500">
+                    <div class="feature-item-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                            class="bi bi-binoculars" viewBox="0 0 16 16">
+                            <path
+                                d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z" />
+                        </svg>
+                        <h5>Modinest</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-4" data-aos="zoom-out-up" data-aos-duration="1800">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="purple"
+                            class="bi bi-box-seam" viewBox="0 0 16 16">
+                            <path
+                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z" />
+                        </svg>
+                        <h5>Undaesenti</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-4" data-aos="zoom-out-up" data-aos-duration="2100">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-sun"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                        </svg>
+                        <h5>Pariatur</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-4" data-aos="zoom-out-up" data-aos-duration="2400">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="red" class="bi bi-command"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 2A1.5 1.5 0 0 1 5 3.5V5H3.5a1.5 1.5 0 1 1 0-3M6 5V3.5A2.5 2.5 0 1 0 3.5 6H5v4H3.5A2.5 2.5 0 1 0 6 12.5V11h4v1.5a2.5 2.5 0 1 0 2.5-2.5H11V6h1.5A2.5 2.5 0 1 0 10 3.5V5zm4 1v4H6V6zm1-1V3.5A1.5 1.5 0 1 1 12.5 5zm0 6h1.5a1.5 1.5 0 1 1-1.5 1.5zm-6 0v1.5A1.5 1.5 0 1 1 3.5 11z" />
+                        </svg>
+                        <h5>Nostrum</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-4" data-aos="zoom-out-up" data-aos-duration="2700">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="blue" class="bi bi-easel"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z" />
+                        </svg>
+                        <h5>Adipiscing</h5>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-4" data-aos="zoom-out-up" data-aos-duration="2900">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="orange" class="bi bi-map"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z" />
+                        </svg>
+                        <h5>Reprehit</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!--Modinest Content Section-->
+
+    <section class="modinest-content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <h2 class="mb-4">Modinest</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="check-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    </div>
+                    <div class="check-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+                    </div>
+                    <div class="check-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                        </svg>
+                        <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    </div>
+                   
+                    <p class="mt-3"> 
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500">
+                    <div class="modinest-content-image">
+                        <img src="Images/features-1.svg" alt="Person interacting with graph" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Service Section-->
+
+    <section class="services-section">
+        <div class="container">
+            <div class="section-title" data-aos="zoom-in-up">
+                <h2>Our Services</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="row">
+                <!-- Service Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card" data-aos="zoom-in-up">
+                        <img src="Images/services-1.jpg" alt="Team collaboration" class="service-image">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-bezier2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01q.269.27.484.605C8.246 5.097 8.5 6.459 8.5 8c0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a3 3 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Nesciunt Mete</h3>
+                            <p class="service-description">Provident nihil minus qui consequatur non omnis maiores. Eos
+                                accusantium minus dolores iure perferendis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card" data-aos="zoom-in-up">
+                        <img src="Images/services-2.jpg" alt="Digital devices" class="service-image">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-broadcast" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Eosle Commodi</h3>
+                            <p class="service-description">Ut autem aut autem non a. Sint sint sit facilis nam iusto
+                                sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card" data-aos="zoom-in-up">
+                        <img src="Images/services-3.jpg" alt="Photography" class="service-image">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-easel" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Ledo Markt</h3>
+                            <p class="service-description">Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
+                                Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card" data-aos="zoom-in-up">
+                        <img src="Images/services-4.jpg" alt="Creative work" class="service-image">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-command" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 2A1.5 1.5 0 0 1 5 3.5V5H3.5a1.5 1.5 0 1 1 0-3M6 5V3.5A2.5 2.5 0 1 0 3.5 6H5v4H3.5A2.5 2.5 0 1 0 6 12.5V11h4v1.5a2.5 2.5 0 1 0 2.5-2.5H11V6h1.5A2.5 2.5 0 1 0 10 3.5V5zm4 1v4H6V6zm1-1V3.5A1.5 1.5 0 1 1 12.5 5zm0 6h1.5a1.5 1.5 0 1 1-1.5 1.5zm-6 0v1.5A1.5 1.5 0 1 1 3.5 11z" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Asperiores Commodit</h3>
+                            <p class="service-description">Non et temporibus minus omnis sed dolor esse consequatur.
+                                Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card" data-aos="zoom-in-up">
+                        <img src="Images/services-5.jpg" alt="Business planning" class="service-image">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z" />
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Velit Doloremque</h3>
+                            <p class="service-description">Cumque et suscipit saepe. Est maiores autem enim facilis ut
+                                aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card" data-aos="zoom-in-up">
+                        <img src="Images/services-6.jpg" alt="Web development" class="service-image">
+                        <div class="service-overlay">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1m0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Dolori Architecto</h3>
+                            <p class="service-description">Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
+                                neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- testimonials-section -->
+
+    <section class="testimonials-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="testimonials-overlay"></div>
+        <div class="container testimonials-content">
+            <div class="section-title" data-aos="zoom-in-left">
+                <h2>Testimonials</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-avatar" data-aos="flip-up">
+                            <img src="Images/testimonials/testimonials-1.jpg" alt="John Larson">
+                        </div>
+                        <h3 class="testimonial-name">John Larson</h3>
+                        <p class="testimonial-position">Entrepreneur</p>
+                        <div class="testimonial-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                                class="bi bi-quote" viewBox="0 4 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg> Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                            veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                            fore nisi cillum quid. <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                fill="currentColor" class="bi bi-quote" viewBox="0 4 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </p>
+                    </div>
+
+                    <!-- Additional testimonials (hidden by default) -->
+                    <div class="carousel-item">
+                        <div class="testimonial-avatar">
+                            <img src="Images/testimonials/testimonials-2.jpg" alt="Sarah Johnson">
+                        </div>
+                        <h3 class="testimonial-name">Sarah Johnson</h3>
+                        <p class="testimonial-position">Designer</p>
+                        <div class="testimonial-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
+                                class="bi bi-quote" viewBox="0 4 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco. <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                fill="currentColor" class="bi bi-quote" viewBox="0 -4 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- pricing-section -->
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-title" data-aos="zoom-in-left">
+                <h2>Our Pricing</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="row">
+                <!-- Free Plan -->
+                <div class="col-lg-4" data-aos="zoom-out-right">
+                    <div class="pricing-card">
+                        <div class="pricing-header striped">
+                            <h3 class="pricing-title">Free Plan</h3>
+                            <div class="pricing-price">
+                                $0<small>/month</small>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Quam adipiscing vitae proin</li>
+                            <li>Nec feugiat nisl pretium</li>
+                            <li>Nulla at volutpat diam uteera</li>
+
+
+                            <li class="disabled"><del>Pharetra massa massa ultricies</del></li>
+                            <li class="disabled"><del>Massa ultricies mi quis hendrerit</del></li>
+                        </ul>
+                        <a href="#" class="pricing-button default">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="col-lg-4" data-aos="zoom-out">
+                    <div class="business-plan-pricing-card featured">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Business Plan</h3>
+                            <div class="pricing-price">
+                                $29<small>/month</small>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Quam adipiscing vitae proin</li>
+                            <li>Nec feugiat nisl pretium</li>
+                            <li>Nulla at volutpat diam uteera</li>
+                            <li>Pharetra massa massa ultricies</li>
+                            <li>Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="#" class="pricing-button featured">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Developer Plan -->
+                <div class="col-lg-4" data-aos="zoom-out-left">
+                    <div class="pricing-card">
+                        <div class="pricing-header striped">
+                            <h3 class="pricing-title">Developer Plan</h3>
+                            <div class="pricing-price">
+                                $49<small>/month</small>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Quam adipiscing vitae proin</li>
+                            <li>Nec feugiat nisl pretium</li>
+                            <li>Nulla at volutpat diam uteera</li>
+                            <li>Pharetra massa massa ultricies</li>
+                            <li>Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="#" class="pricing-button default">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--FAQ-section-->
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title" data-aos="fade-up" data-aos-anchor-placement>
+                        <h2>Frequently Asked <span>Questions</span></h2>
+                    </div>
+                    <p class="section-description" data-aos="fade-up" data-aos-anchor-placement>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Duis aute irure dolor in reprehenderit
+                    </p>
+
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item" data-aos="fade-up-right">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18 " height="18" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                                      </svg> Non consectetur a erat nam at lectus urna dui?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur
+                                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item" data-aos="fade-up-right">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18 " fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                                      </svg> Feugiat scelerisque faucibus a pellentesque?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                    velit laoreet id
+                                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item" data-aos="fade-up-right">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18 " height="18" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                                      </svg> Dolor sit amet consectetur pellentesque?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                    pulvinar
+                                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="Images/faq.jpg" alt="FAQ illustration" class="faq-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--portfolio-section-->
+
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="app">App</button>
+                <button class="filter-button" data-filter="product">Product</button>
+                <button class="filter-button" data-filter="branding">Branding</button>
+                <button class="filter-button" data-filter="books">Books</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- App Items -->
+                <div class="portfolio-item" data-category="app" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/app-1.jpg" alt="Mobile App Interface">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Mobile App</h3>
+                            <p>App Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Items -->
+                <div class="portfolio-item" data-category="product" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/product-1.jpg" alt="Smart Watch">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Smart Watch</h3>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Items -->
+                <div class="portfolio-item" data-category="product" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/branding-1.jpg" alt="Headphones">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Premium Audio</h3>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Items -->
+                <div class="portfolio-item" data-category="branding" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/books-1.jpg" alt="Brand Materials">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Brand Identity</h3>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Items -->
+                <div class="portfolio-item" data-category="books" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/app-2.jpg" alt="Book Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Book Cover</h3>
+                            <p>Print Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Items -->
+                <div class="portfolio-item" data-category="product" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/product-2.jpg" alt="Camera Equipment">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Photography Gear</h3>
+                            <p>Product Photography</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Items -->
+                <div class="portfolio-item" data-category="product" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/branding-2.jpg" alt="Desk Lamp">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Modern Lighting</h3>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Items -->
+                <div class="portfolio-item" data-category="branding" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/books-2.jpg" alt="Coffee Packaging">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Coffee Brand</h3>
+                            <p>Packaging Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Items -->
+                <div class="portfolio-item" data-category="books" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/app-3.jpg" alt="Book Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Book Cover</h3>
+                            <p>Print Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Items -->
+                <div class="portfolio-item" data-category="product" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/product-3.jpg" alt="Camera Equipment">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Photography Gear</h3>
+                            <p>Product Photography</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Items -->
+                <div class="portfolio-item" data-category="product" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/branding-3.jpg" alt="Desk Lamp">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Modern Lighting</h3>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Items -->
+                <div class="portfolio-item" data-category="branding" data-aos="zoom-in-down">
+                    <img src="Images/portfolio/books-3.jpg" alt="Coffee Packaging">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-overlay-content">
+                            <h3>Coffee Brand</h3>
+                            <p>Packaging Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title" data-aos="zoom-in-left">
+                <h2>Our Team</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up-right">
+                    <div class="team-member" data-aos="fade-up-right">
+                        <img src="Images/team/team-1.jpg" alt="Walter White" class="team-member-img">
+                        <div class="team-member-info">
+                            <h3 class="team-member-name">Walter White</h3>
+                            <p class="team-member-position">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up-right">
+                    <div class="team-member">
+                        <img src="Images/team/team-2.jpg" alt="Sarah Jhonson" class="team-member-img">
+                        <div class="team-member-info">
+                            <h3 class="team-member-name">Sarah Jhonson</h3>
+                            <p class="team-member-position">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up-right">
+                    <div class="team-member">
+                        <img src="Images/team/team-3.jpg" alt="William Anderson" class="team-member-img">
+                        <div class="team-member-info">
+                            <h3 class="team-member-name">William Anderson</h3>
+                            <p class="team-member-position">CTO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-title" data-aos="zoom-in-left">
+                <h2>Recent Blog Posts</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card" data-aos="zoom-out-right">
+                        <img src="Images/blog/blog-1.jpg" alt="Man working at desk" class="blog-image">
+                        <div class="blog-content" data-aos="zoom-in-up">
+                            <span class="blog-category">Politics</span>
+                            <h3 class="blog-title">
+                                <a href="#">Dolorum optio tempore voluptas dignissi soluta ut id</a>
+                            </h3>
+                            <div class="blog-meta">
+                                <div class="author-avatar">
+                                    <img src="Images/blog/blog-author.jpg" alt="Maria Doe">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Maria Doe</p>
+                                    <p class="post-date">Jan 1, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card" data-aos="zoom-out-down">
+                        <img src="Images/blog/blog-2.jpg" alt="People working on computers" class="blog-image">
+                        <div class="blog-content" data-aos="zoom-in-up">
+                            <span class="blog-category">Sports</span>
+                            <h3 class="blog-title">
+                                <a href="#">Nisi magni odit consequatur autem nulla dolorem</a>
+                            </h3>
+                            <div class="blog-meta">
+                                <div class="author-avatar">
+                                    <img src="Images/blog/blog-author-2.jpg" alt="Allisa Mayer">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Allisa Mayer</p>
+                                    <p class="post-date">Jun 5, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card" data-aos="zoom-out-left">
+                        <img src="Images/blog/blog-3.jpg" alt="Team meeting" class="blog-image">
+                        <div class="blog-content" data-aos="zoom-in-up">
+                            <span class="blog-category">Entertainment</span>
+                            <h3 class="blog-title">
+                                <a href="#">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                            </h3>
+                            <div class="blog-meta">
+                                <div class="author-avatar">
+                                    <img src="Images/blog/blog-author-3.jpg" alt="Mark Dower">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Mark Dower</p>
+                                    <p class="post-date">Jan 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--contact-section-->
+    <section class="contact-section" data-aos="fade-up-left">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="map-container" data-aos="zoom-in-down">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763!3d40.697403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250d225bfafdd%3A0x249f013a2cd25d9!2sJersey%20City%2C%20NJ!5e0!3m2!1sen!2sus!4v1635787567432!5m2!1sen!2sus"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Jersey City Map Location"
+                            aria-label="Interactive map showing Jersey City location">
+                        </iframe>
+                        <div class="map-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--contact-section-->
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up"
+                data-aos-anchor-placement="center-center">
+                    <div class="contact-info" data-aos="fade-up-right">
+                        <h3>Get in touch</h3>
+                        <p>Et id eius voluptates atque sed et voluptatum amet in tempore maxima ut sed nullam commodi
+                            asperiores.</p>
+
+                        <div class="contact-item" data-aos="fade-up"
+                        data-aos-anchor-placement="center-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg>  
+                            <div class="contact-text">
+                                <h5>Location :</h5>   
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-up"
+                        data-aos-anchor-placement="center-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                              </svg>
+                            <div class="contact-text">
+                                <h5>Email :</h5> 
+                                <p>@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-up"
+                        data-aos-anchor-placement="center-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                              </svg>
+                            <div class="contact-text">
+                                <h5>Contact :</h5> 
+                                <p>+1 5589 55488 55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-md-6"  data-aos="zoom-out-left">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6"  data-aos="zoom-out-left">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Subject" required  data-aos="zoom-out-left">
+                        <textarea class="form-control" placeholder="Message" required  data-aos="zoom-out-left"></textarea>
+                        <div class="text-end"  data-aos="zoom-out-left">
+                            <button type="submit" class="btn btn-send">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--Footer Section-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6 footer-section" data-aos="fade-down-left">
+                    <div class="footer-logo">My template</div>
+                    <ul class="footer-contact" data-aos="zoom-out-right">
+                        <li>A108 Adam Street</li>
+                        <li>New York, NY 535022</li>
+                        <li>Phone: +1 5589 55488 55</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+    
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6 footer-section" data-aos="fade-down-left">
+                    <h3 class="footer-heading">Useful Links</h3>
+                    <ul class="footer-links" data-aos="zoom-out-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Our Services -->
+                <div class="col-lg-3 col-md-6 footer-section" data-aos="fade-down-left">
+                    <h3 class="footer-heading">Our Services</h3>
+                    <ul class="footer-links" data-aos="zoom-out-right">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Product Management</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Additional Links -->
+                <div class="col-lg-3 col-md-6 footer-section" data-aos="fade-down-left">
+                    <h3 class="footer-heading">Nobis illum</h3>
+                    <ul class="footer-links" data-aos="zoom-out-right">
+                        <li><a href="#">Spam</a></li>
+                        <li><a href="#">Laudantium dolorum</a></li>
+                        <li><a href="#">Dinera</a></li>
+                        <li><a href="#">Trodelas</a></li>
+                        <li><a href="#">Flexo</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            © Copyright <strong>MyWebsite</strong>. All Rights Reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-md-end">
+                            <div class="social-links">
+                                <a href="#" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg></a>
+                                <a href="#" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                  </svg></a>
+                                <a href="#" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                  </svg></a>
+                                <a href="#" class="social-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                  </svg></a>
+                            </div>
+                            <a href="index.html" class="scroll-top ms-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
