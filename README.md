@@ -1,0 +1,2 @@
+# -Image-to-HTML-Conversion-A-Fully-Responsive-and-Animated-Web-Design-Project
+Develop a fully responsive and animated website template using HTML, CSS, and Bootstrap. This project transforms a comprehensive web design mockup into a polished and adaptable webpage. The final design includes a streamlined navigation bar, an impactful hero section with a compelling call-to-action, and an 'About Us' section
